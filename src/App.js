@@ -1,11 +1,13 @@
+import { useContext } from "react";
+import { AuthContext } from "./context/AuthContext";
 
 function App() {
+  const { userData } = useContext(AuthContext);
+
   return (
     <div>
       ----------------------------------------------------------------------------<br></br>
-
-      UM NOVO PILOT CHEIO DE NOVIDADES VEM AÍ<br></br>
-
+      testa<br></br>
       ----------------------------------------------------------------------------<br></br>
     </div>
   );

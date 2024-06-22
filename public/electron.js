@@ -17,7 +17,8 @@ function createWindow() {
     });
     win.setMenu(null);
     win.maximize();
-    win.loadURL(`file://${path.join(__dirname, "../build/index.html")}`);
+    //win.loadURL(`file://${path.join(__dirname, "../build/index.html")}`);
+    win.loadURL('http://localhost:3000');
 
     return win
 };
