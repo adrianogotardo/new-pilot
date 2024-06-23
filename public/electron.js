@@ -12,10 +12,10 @@ function createWindow() {
         resizable: true,
         fullscreenable: true,
         minWidth: 1100,
-        minHeight: 700
+        minHeight: 700,
+        autoHideMenuBar: true
         //icon: `${path.join(__dirname, "./assets/icon.png")}`
     });
-    win.setMenu(null);
     win.maximize();
     //win.loadURL(`file://${path.join(__dirname, "../build/index.html")}`);
     win.loadURL('http://localhost:3000');
@@ -26,5 +26,5 @@ function createWindow() {
 app.whenReady().then(App);
 
 app.on("window-all-closed", () => {
-    if(process.platform !== "darwin") app.quit();
+    if (process.platform !== "darwin") app.quit();
 });
