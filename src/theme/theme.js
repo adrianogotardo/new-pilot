@@ -31,6 +31,9 @@ const palette = {
         main: '#2196f3',
         dark: '#1976d2'
     },
+    company: {
+        golden: '#bb9d6f'
+    }
 }
 
 export const theme = createTheme({
