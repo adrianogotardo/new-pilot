@@ -30,7 +30,7 @@ export default function Slider({ switchSliderSide, sliderSide }) {
             initial={sliderSide} animate={sliderSide}
         >
             <ContainerStyle>
-                <LogoStyle src={"./assets/piottoAuthLogo.png"} />
+                <LogoStyle src={"./assets/piotto-auth-logo.png"} />
                 <SwitchAuthButton onClick={switchSliderSide}>
                     {isShowingLogin ? switchAuthText.goToSignUp : switchAuthText.goToSignIn}
                 </SwitchAuthButton>

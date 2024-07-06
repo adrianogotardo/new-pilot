@@ -11,14 +11,12 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <AuthContextProvider>
-      <ThemeProvider theme={theme}>
-        <HashRouter>
-          <ToastContainer />
-          <App />
-        </HashRouter>
-      </ThemeProvider>
-    </AuthContextProvider>
-  </React.StrictMode>
+  <AuthContextProvider>
+    <ThemeProvider theme={theme}>
+      <HashRouter>
+        <ToastContainer />
+        <App />
+      </HashRouter>
+    </ThemeProvider>
+  </AuthContextProvider>
 );

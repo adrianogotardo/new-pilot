@@ -5,7 +5,7 @@ export const Background = styled("div")`
     width: 100vw;
     height: 100vh;
     background: ${(props) => props.theme.palette.primary.dark};
-    background-image: url("./assets/backgroundPattern.png");
+    background-image: url("./assets/background-pattern.png");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -26,7 +26,6 @@ export const TrackContainer = styled(motion.section)`
 
     position: relative;
 `;
-
 
 export const ContainerSection = styled('form')`
     width: 50%;
