@@ -19,8 +19,16 @@ export const SliderStyle = styled(motion.div)`
     z-index: 10;
 `;
 
+export const ContainerStyle = styled("div")`
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+`;
+
 export const LogoStyle = styled("img")`
-    height: 16vh;
+    height: 14vh;
 `;
 
 export const SwitchAuthButton = styled('button')`

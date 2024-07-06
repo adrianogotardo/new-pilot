@@ -28,7 +28,7 @@ export const TrackContainer = styled(motion.section)`
 `;
 
 
-export const ContainerSection = styled('section')`
+export const ContainerSection = styled('form')`
     width: 50%;
 
     display: flex;

@@ -1,5 +1,5 @@
 import useWindowSize from "../../../hooks/useWindowSize";
-import { LogoStyle, SliderStyle, SwitchAuthButton } from "./Slider.styles";
+import { ContainerStyle, LogoStyle, SliderStyle, SwitchAuthButton } from "./Slider.styles";
 
 export default function Slider({ switchSliderSide, sliderSide }) {
 
@@ -29,10 +29,12 @@ export default function Slider({ switchSliderSide, sliderSide }) {
             transition={animationConfig.transition}
             initial={sliderSide} animate={sliderSide}
         >
-            <LogoStyle src={"./assets/piottoAuthLogo.png"} />
-            <SwitchAuthButton onClick={switchSliderSide}>
-                {isShowingLogin ? switchAuthText.goToSignUp : switchAuthText.goToSignIn}
-            </SwitchAuthButton>
+            <ContainerStyle>
+                <LogoStyle src={"./assets/piottoAuthLogo.png"} />
+                <SwitchAuthButton onClick={switchSliderSide}>
+                    {isShowingLogin ? switchAuthText.goToSignUp : switchAuthText.goToSignIn}
+                </SwitchAuthButton>
+            </ContainerStyle>
         </SliderStyle>
     );
 }
