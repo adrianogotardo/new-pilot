@@ -10,10 +10,18 @@ export const HeaderStyle = styled("header")`
     background-repeat: no-repeat;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     padding: 0 25px;
-    margin-bottom: 25px;
 
     display: flex;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+`;
+
+export const MarginBox = styled('div')`
+    width: 100%;
+    height: 65px;
 `;
 
 export const MenuIconStyle = styled(MenuIcon)`

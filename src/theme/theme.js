@@ -18,8 +18,8 @@ const palette = {
     },
     error: {
         light: '#e57373',
-        main: '#f44336',
-        dark: '#d32f2f'
+        main: '#EA0303',
+        dark: '#D30000'
     },
     warning: {
         light: '#ffb74d',
@@ -38,27 +38,4 @@ const palette = {
 
 export const theme = createTheme({
     palette: palette,
-    components: {
-        MuiDataGrid: {
-            styleOverrides: {
-                root: {
-                    border: "none",
-                    color: palette.secondary.light,
-                },
-                columnHeader: {
-                    fontSize: "0.75rem",
-                    textAlign: "center",
-                },
-                row: {
-                    margin: "0.25rem",
-                    padding: "0.25rem",
-                },
-            },
-        },
-    },
-    mixins: {
-        MuiDataGrid: {
-            containerBackground: "rgba(0, 0, 0, 0)",
-        },
-    },
 });
