@@ -1,5 +1,5 @@
-import { styled } from "@mui/material";
+import { styled, TableRow } from "@mui/material";
 
-export const Table = styled("div")`
-
-`;
+export const TableRowStyle = styled(TableRow)(({ theme }) => ({
+    backgroundColor: theme.palette.company.golden,
+}));
