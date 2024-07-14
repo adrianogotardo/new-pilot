@@ -1,19 +1,20 @@
+import { useState } from "react";
 import PageCard from "../../components/General/PageCard/PageCard";
-import BasicButton from "../../components/UI/BasicButton/BasicButton";
-import { ButtonsContainer, TopContainer } from "./Orders.style";
-import OrdersTable from "./OrdersTable/OrdersTable";
+import OrdersList from "./OrdersList/OrdersList";
+import CreateOrder from "./CreateOrder/CreateOrder";
 
 export default function Orders() {
+    const [isInCreateOrderPage, setIsInCreateOrderPage] = useState(false);
+
     return (
         <PageCard>
-            <TopContainer>
-                <h1>Pedidos</h1>
-                <ButtonsContainer>
-                    <BasicButton> Config. de busca </BasicButton>
-                    <BasicButton> + Adicionar pedido </BasicButton>
-                </ButtonsContainer>
-            </TopContainer>
-            <OrdersTable />
+            {
+                isInCreateOrderPage
+                    ?
+                    <CreateOrder isInCreateOrderPage={isInCreateOrderPage} setIsInCreateOrderPage={setIsInCreateOrderPage} />
+                    :
+                    <OrdersList isInCreateOrderPage={isInCreateOrderPage} setIsInCreateOrderPage={setIsInCreateOrderPage} />
+            }
         </PageCard>
     );
 }

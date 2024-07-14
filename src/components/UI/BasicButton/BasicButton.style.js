@@ -1,7 +1,7 @@
 import { keyframes, styled } from "@mui/material";
 
 export const ButtonStyle = styled('button')`
-    height: 30px;
+    height: 35px;
     width: 180px;
     background-color: ${(props) => props.danger ? props.theme.palette.error.main : props.theme.palette.secondary.dark};
     border: none;

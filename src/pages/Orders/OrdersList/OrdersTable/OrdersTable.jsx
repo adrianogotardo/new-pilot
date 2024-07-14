@@ -1,4 +1,4 @@
-import { ordersAPIMock } from "../Orders.mock";
+import { ordersAPIMock } from "../../Orders.mock";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -29,9 +29,9 @@ export default function OrdersTable() {
                     <TableRow sx={{ backgroundColor: 'company.golden' }}>
                         {
                             tableTitles.map((title, index) => {
-                                const lastTitle = index == tableTitles.length - 1;
+                                const lastTitle = index === tableTitles.length - 1;
                                 return (
-                                    <TableCell sx={{ color: 'primary.light' }} align={lastTitle ? 'right' : ''}>
+                                    <TableCell key={index} sx={{ color: 'primary.light' }} align={lastTitle ? 'right' : 'left'}>
                                         {title}
                                     </TableCell>
                                 );
@@ -60,30 +60,3 @@ export default function OrdersTable() {
         </TableContainer>
     );
 }
-
-/*     return (
-        <Table>
-            <div>
-                <span>Pedido</span>
-                <span>Obra</span>
-                <span>Loja</span>
-                <span>Valor</span>
-                <span>Data</span>
-                <span>U [ ]</span>
-            </div>
-            {
-                ordersAPIMock.map((order) => {
-                    return (
-                        <div>
-                            <span>{order.id}</span> -
-                            <span>{order.name}</span> -
-                            <span>{order.workingSiteName}</span> -
-                            <span>{order.storeName}</span> -
-                            <span>{order.value}</span> -
-                            <span>{order.date}</span> -
-                        </div>
-                    );
-                })
-            }
-        </Table>
-    ); */

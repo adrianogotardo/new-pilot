@@ -22,7 +22,7 @@ export const Card = styled("div")`
 
     h1{
 
-        font-size: 28px;
+        font-size: 30px;
         font-weight: 700;
         color: ${(props) => props.theme.palette.secondary.dark};
     }

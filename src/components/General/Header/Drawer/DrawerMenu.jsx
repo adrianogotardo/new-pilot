@@ -11,7 +11,6 @@ export default function DrawerMenu({ isOpen, setIsOpen }) {
     const { logout } = useContext(AuthContext)
 
     function handleClick(route) {
-        console.log(route);
         if (route === '/logout') {
             navigate('/')
             logout();
